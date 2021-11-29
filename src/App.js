@@ -1,14 +1,13 @@
-import affogato from "./assets/affogato.png"
-import './App.css';
-
+import { Route, Switch } from "react-router";
+import Home from "./pages/Home";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <img src = {affogato}/>
-      </header>
-    </div>
-  );
+    <Switch>
+      <Route>
+        <Home exact path = "/" />
+      </Route>
+    </Switch>
+  )
 }
 
 export default App;
