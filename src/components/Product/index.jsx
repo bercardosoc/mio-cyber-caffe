@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux"
 import { addToCart, removeFromCart } from "../../store/modules/cart/actions"
-
+import { Button } from "./styles"
 const Product = ({ product, isRemovable = false}) => {
 
     const { name, img, description, price, id } = product
@@ -9,19 +9,19 @@ const Product = ({ product, isRemovable = false}) => {
 
     return (
         <>
-            <h2>{name}</h2>
+            <h3>{name}</h3>
             <img src= {img} alt={name} />
             <p>{description}</p>
             <span>{price.toFixed(2)}R$</span>
             {
                 isRemovable ? (
-                    <button onClick={() => dispatch(removeFromCart(id))} >
+                    <Button onClick={() => dispatch(removeFromCart(id))} >
                         Remover
-                    </button>
+                    </Button>
                 ) : (
-                    <button onClick={() => dispatch(addToCart(product))} >
+                    <Button onClick={() => dispatch(addToCart(product))} >
                         Comprar
-                    </button>
+                    </Button>
                 )
             }
         </>

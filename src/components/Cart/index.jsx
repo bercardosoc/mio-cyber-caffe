@@ -1,18 +1,27 @@
 import { useSelector } from "react-redux";
 import Product from "../Product"
+import { Container } from "./styles";
+import { Content, EachContent } from "../ProductList/styles";
+import { BsCart4 } from "react-icons/bs"
 
 const Cart = () => {
     const cart = useSelector((store) => store.cart)
 
     return (
-        <>
-            <h3>Carrinho de compras</h3>
+        <Container>
+            <h2>Carrinho de compras <BsCart4 size={25} /> </h2>
+            <Content>
             {
                 cart.map((item) => (
-                    <Product key={item.id} product={item} isRemovable />
+                    <>
+                    <EachContent>
+                        <Product key={item.id} product={item} isRemovable />
+                    </EachContent>
+                    </>
                 ))
             }
-        </>
+            </Content>
+        </Container>
     )
 }
 export default Cart

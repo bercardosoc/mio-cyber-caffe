@@ -7,3 +7,7 @@
     font-family: "Latte";
     src: url(./font/CoffeeLatte-OVqjO.ttf);
 }
+@font-face {
+    font-family: "Latte-outro";
+    src: url(./font/CoffeeLatte-Earjr.otf);
+}

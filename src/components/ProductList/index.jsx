@@ -8,6 +8,7 @@ const ProductList = () => {
     return (
         <Container>
         <h1>Ber & Lu</h1>
+        <h2>Cafézinhos</h2>
             <Content>
             {
                 products.map((item) => (

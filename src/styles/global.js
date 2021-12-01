@@ -14,9 +14,10 @@ export default createGlobalStyle`
     --amarelo: #fcff82; 
     --laranja: #ff9c6d; 
     --vermelho: #fd5959; 
+    --branco: #ffffff;
 }
 body {
-    background: var(--azul);
+    background: var(--amarelo);
 }
 button {
     cursor: pointer;
