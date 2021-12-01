@@ -12,7 +12,7 @@ const Product = ({ product, isRemovable = false}) => {
             <h2>{name}</h2>
             <img src= {img} alt={name} />
             <p>{description}</p>
-            <span>{price}</span>
+            <span>{price.toFixed(2)}R$</span>
             {
                 isRemovable ? (
                     <button onClick={() => dispatch(removeFromCart(id))} >

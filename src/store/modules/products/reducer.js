@@ -4,7 +4,8 @@ import cappuccino from "../../../assets/cappuccino.png"
 import dalgona from "../../../assets/dalgona.png" 
 import doppio from "../../../assets/doppio.png"
 import expresso from "../../../assets/expresso.png"
-import irish from "../../../assets/galao.png"
+import galao from "../../../assets/galao.png"
+import irish from "../../../assets/irish.png"
 import latte from "../../../assets/latte.png"
 import mocha from "../../../assets/mocha.png"
 
@@ -15,8 +16,8 @@ const defaultState = [
     {id: 4, name: "Dalgona", description: "Café solúvel cremoso.", price: 10, img: dalgona,},
     {id: 5, name: "Doppio", description: "Expresso duplo.", price: 10, img: doppio,},
     {id: 6, name: "Expresso", description: "Expresso simples.", price: 10, img: expresso,},
-    {id: 7, name: "Galão", description: "Café português expresso com leite espumoso.", price: 10, img: irish,},
-    {id: 8, name: "Irlandês", description: "Café irlandês com uísque, açúcar e creme.", price: 10, img: "../../../assets/irish.png,"},
+    {id: 7, name: "Galão", description: "Café português expresso com leite espumoso.", price: 10, img: galao,},
+    {id: 8, name: "Irlandês", description: "Café irlandês com uísque, açúcar e creme.", price: 10, img: irish},
     {id: 9, name: "Latte", description: "Expresso com leite", price: 10, img: latte,},
     {id: 10, name: "Mocha", description: "Expresso com chocolate e leite", price: 10, img: mocha,}
 ]
