@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
 import Product from "../Product"
+import { SiBuymeacoffee } from "react-icons/si"
 import { Container, Content, EachContent } from "./styles"
 
 
@@ -7,8 +8,7 @@ const ProductList = () => {
     const products = useSelector((store) => store.products)
     return (
         <Container>
-        <h1>Ber & Lu</h1>
-        <h2>Cafézinhos</h2>
+        <h2> <SiBuymeacoffee/> Cafézinhos para viagem </h2>
             <Content>
             {
                 products.map((item) => (

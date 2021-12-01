@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import Product from "../Product"
-import { Container } from "./styles";
-import { Content, EachContent } from "../ProductList/styles";
+import { Container, Content, EachBuy } from "./styles";
 import { BsCart4 } from "react-icons/bs"
 
 const Cart = () => {
@@ -14,9 +13,9 @@ const Cart = () => {
             {
                 cart.map((item) => (
                     <>
-                    <EachContent>
+                    <EachBuy>
                         <Product key={item.id} product={item} isRemovable />
-                    </EachContent>
+                    </EachBuy>
                     </>
                 ))
             }
