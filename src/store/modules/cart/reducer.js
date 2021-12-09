@@ -7,10 +7,13 @@ const cartReducer = (state = [], action) => {
             return [...state, product]
 
         case REMOVE_FROM_CART:
-            const { id } = action
-            const newList = state.filter((product) => product.id !== id)
-            return newList
-
+            const { cart } = action
+            console.log(state)
+            const removed = state.find((item) => item.id === cart)
+            const removedIndex = state.indexOf(removed)
+            state.splice(removedIndex, 1)
+            return([...state])
+        
         default:
             return state
     }
